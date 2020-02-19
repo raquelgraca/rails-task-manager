@@ -8,8 +8,7 @@ class TasksController < ApplicationController
   def show; end
 
   def new
-    @tasks = Task.new
-    redirect_to tasks_path
+    @super_task = Task.new
   end
 
   def create
